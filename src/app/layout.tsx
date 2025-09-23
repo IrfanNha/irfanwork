@@ -3,7 +3,7 @@ import { Providers } from "@/components/shared/providers";
 import { fontVariables } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/constants/site";
-import "./globals.css";
+import "../styles/globals.css";
 
 export const metadata: Metadata = {
 	title: {
