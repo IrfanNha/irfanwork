@@ -58,6 +58,11 @@ const config = {
 				md: "calc(var(--radius) - 2px)",
 				sm: "calc(var(--radius) - 4px)",
 			},
+			fontFamily: {
+				heading: ["var(--font-heading)"],
+				body: ["var(--font-body)"],
+				mono: ["var(--font-mono)"],
+			},
 			keyframes: {
 				"accordion-down": {
 					from: { height: "0" },
@@ -79,6 +84,10 @@ const config = {
 					from: { opacity: "0", transform: "translateX(20px)" },
 					to: { opacity: "1", transform: "translateX(0)" },
 				},
+				"text-reveal": {
+					from: { transform: "translateY(100%)", opacity: "0" },
+					to: { transform: "translateY(0)", opacity: "1" },
+				},
 			},
 			animation: {
 				"accordion-down": "accordion-down 0.2s ease-out",
@@ -86,11 +95,7 @@ const config = {
 				"fade-in": "fade-in 0.5s ease-out",
 				"fade-in-up": "fade-in-up 0.5s ease-out",
 				"slide-in-right": "slide-in-right 0.3s ease-out",
-			},
-			fontFamily: {
-				heading: ["Space Grotesk", "sans-serif"],
-				body: ["Inter", "sans-serif"],
-				mono: ["IBM Plex Mono", "monospace"],
+				"text-reveal": "text-reveal 0.8s ease-out",
 			},
 		},
 	},
